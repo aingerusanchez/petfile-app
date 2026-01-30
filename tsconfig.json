@@ -6,6 +6,7 @@
     "paths": {
       "@/*": ["./*"],
       "@/components/*": ["./components/*"],
+      "@/constants/*": ["./constants/*"],
       "@/hooks/*": ["./hooks/*"],
       "@/store/*": ["./store/*"],
       "@/types/*": ["./types/*"],

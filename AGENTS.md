@@ -79,12 +79,30 @@ petfile/
 │   │   ├── health.tsx      # Health screen (/health)
 │   │   └── profile.tsx     # Profile screen (/profile)
 │   └── index.tsx           # Redirect or standalone pages
-├── components/             # Reusable components (to be created)
+├── components/             # Reusable components
+├── constants/              # App constants
+│   └── theme.ts            # Design tokens (colors, fonts, spacing)
 ├── tailwind.config.js      # Tailwind/NativeWind config
 ├── babel.config.js         # Babel config with NativeWind plugin
 ├── metro.config.js         # Metro bundler config
 └── global.css              # Global Tailwind imports
 ```
+
+## Path Aliases
+
+Configured in `tsconfig.json`:
+
+| Alias | Path |
+|-------|------|
+| `@/*` | `./*` |
+| `@/components/*` | `./components/*` |
+| `@/constants/*` | `./constants/*` |
+| `@/hooks/*` | `./hooks/*` |
+| `@/store/*` | `./store/*` |
+| `@/types/*` | `./types/*` |
+| `@/utils/*` | `./utils/*` |
+
+Example: `import { colors } from "@/constants/theme";`
 
 ## Routing Convention (Expo Router)
 

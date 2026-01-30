@@ -73,10 +73,21 @@ petfile/
 │       ├── health.tsx        # Health screen
 │       └── profile.tsx       # Profile screen
 ├── components/               # Reusable components
-├── tailwind.config.js        # Design tokens & colors
+├── constants/
+│   └── theme.ts              # Design tokens (colors, fonts, spacing)
+├── tailwind.config.js        # Tailwind/NativeWind config
 ├── babel.config.js           # Babel + NativeWind
 ├── AGENTS.md                 # AI agent context
 └── README.md
+```
+
+### Path Aliases
+
+Use `@/` prefix for imports:
+
+```tsx
+import { colors, fonts } from "@/constants/theme";
+import { Button } from "@/components/Button";
 ```
 
 ## Scripts
