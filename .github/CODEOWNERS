@@ -1,0 +1,26 @@
+# CODEOWNERS - Define code ownership for PR reviews
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything
+*                           @aingerusanchez
+
+# Critical configuration files
+package.json                @aingerusanchez
+pnpm-lock.yaml              @aingerusanchez
+tailwind.config.js          @aingerusanchez
+babel.config.js             @aingerusanchez
+metro.config.js             @aingerusanchez
+tsconfig.json               @aingerusanchez
+app.json                    @aingerusanchez
+
+# Legal and documentation
+LICENSE.md                  @aingerusanchez
+AGENTS.md                   @aingerusanchez
+README.md                   @aingerusanchez
+
+# Root layouts (critical for app structure)
+/app/_layout.tsx            @aingerusanchez
+/app/(tabs)/_layout.tsx     @aingerusanchez
+
+# GitHub configuration
+/.github/                   @aingerusanchez
